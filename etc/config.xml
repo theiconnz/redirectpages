@@ -23,11 +23,11 @@
             <general>
                 <enable>0</enable>
                 <enablemaintenance>0</enablemaintenance>
-                <enablecommingsoon>0</enablecommingsoon>
+                <enablecomingsoon>0</enablecomingsoon>
                 <redirect_for_maintenance>0</redirect_for_maintenance>
                 <maintenance_allowed_ip><![CDATA[]]></maintenance_allowed_ip>
-                <redirect_for_commingsoon>0</redirect_for_commingsoon>
-                <commingsoon_allowed_ip><![CDATA[]]></commingsoon_allowed_ip>
+                <redirect_for_comingsoon>0</redirect_for_comingsoon>
+                <comingsoon_allowed_ip><![CDATA[]]></comingsoon_allowed_ip>
             </general>
         </pageredirect>
     </default>

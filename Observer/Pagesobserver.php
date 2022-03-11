@@ -108,15 +108,15 @@ class Pagesobserver implements \Magento\Framework\Event\ObserverInterface
             }
         }
 
-        if($commingsoonpage = $this->helper->getRedirectforCommingSoon()){
-            $redirectUrl = $this->url->getUrl($commingsoonpage, ['_secure' => true]);
+        if($comingsoonpage = $this->helper->getRedirectforcomingSoon()){
+            $redirectUrl = $this->url->getUrl($comingsoonpage, ['_secure' => true]);
 
-            if( !strstr($requestPath, $commingsoonpage)) {
-                if (!empty($pageidentity) && $pageidentity===$commingsoonpage) {
+            if( !strstr($requestPath, $comingsoonpage)) {
+                if (!empty($pageidentity) && $pageidentity===$comingsoonpage) {
                     return;
                 } else {
                     if($currentUrl!=$redirectUrl) {
-                        $ips = explode(",", $this->helper->getAllowedCommingsoonIps());
+                        $ips = explode(",", $this->helper->getAllowedcomingsoonIps());
                         if (!in_array($clientip, $ips)) {
                             $this->requestHandler->execute($request, $response, $redirectUrl);
                         }

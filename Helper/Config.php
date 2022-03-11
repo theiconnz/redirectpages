@@ -23,11 +23,11 @@ class Config extends \Magento\Framework\App\Helper\AbstractHelper
 {
     const XML_PATH_ENABLE = 'pageredirect/general/enable';
     const XML_PATH_ENABLE_MAINTENANCE = 'pageredirect/general/enablemaintenance';
-    const XML_PATH_ENABLE_COMMING_SOON = 'pageredirect/general/enablecommingsoon';
+    const XML_PATH_ENABLE_coming_SOON = 'pageredirect/general/enablecomingsoon';
     const XML_PATH_ENABLE_REDIR_MAIN = 'pageredirect/general/redirect_for_maintenance';
     const XML_PATH_ENABLE_ALLOWDIP_MAIN = 'pageredirect/general/maintenance_allowed_ip';
-    const XML_PATH_ENABLE_REDIR_COMMINGSOON = 'pageredirect/general/redirect_for_commingsoon';
-    const XML_PATH_ENABLE_ALLOWDIP_COMMINGSOON = 'pageredirect/general/commingsoon_allowed_ip';
+    const XML_PATH_ENABLE_REDIR_comingSOON = 'pageredirect/general/redirect_for_comingsoon';
+    const XML_PATH_ENABLE_ALLOWDIP_comingSOON = 'pageredirect/general/comingsoon_allowed_ip';
 
     /**
      * Receive magento config value
@@ -73,18 +73,18 @@ class Config extends \Magento\Framework\App\Helper\AbstractHelper
     }
 
     /**
-     * Receive if comming soon enable
+     * Receive if coming soon enable
      *
      * @param null $scopeCode
      * @param null $scopeType
      * @return int
      */
-    public function isEnableCommingSoon($scopeCode = null, $scopeType = null): int
+    public function isEnablecomingSoon($scopeCode = null, $scopeType = null): int
     {
         if (!$this->isEnable($scopeCode, $scopeType)){
             return 0;
         }
-        return (int) $this->getConfig(self::XML_PATH_ENABLE_COMMING_SOON, $scopeCode, $scopeType);
+        return (int) $this->getConfig(self::XML_PATH_ENABLE_coming_SOON, $scopeCode, $scopeType);
     }
 
     /**
@@ -103,18 +103,18 @@ class Config extends \Magento\Framework\App\Helper\AbstractHelper
     }
 
     /**
-     * Get Redirect page for Comming soon
+     * Get Redirect page for coming soon
      *
      * @param null $scopeCode
      * @param null $scopeType
      * @return mix
      */
-    public function getRedirectforCommingSoon($scopeCode = null, $scopeType = null)
+    public function getRedirectforcomingSoon($scopeCode = null, $scopeType = null)
     {
-        if(!$this->isEnableCommingSoon($scopeCode, $scopeType)){
+        if(!$this->isEnablecomingSoon($scopeCode, $scopeType)){
             return false;
         }
-        return $this->getConfig(self::XML_PATH_ENABLE_REDIR_COMMINGSOON, $scopeCode, $scopeType);
+        return $this->getConfig(self::XML_PATH_ENABLE_REDIR_comingSOON, $scopeCode, $scopeType);
     }
 
     /**
@@ -131,15 +131,15 @@ class Config extends \Magento\Framework\App\Helper\AbstractHelper
 
 
     /**
-     * Get all allowed ip addresses for Comming soon
+     * Get all allowed ip addresses for coming soon
      *
      * @param null $scopeCode
      * @param null $scopeType
      * @return mix
      */
-    public function getAllowedCommingsoonIps($scopeCode = null, $scopeType = null)
+    public function getAllowedcomingsoonIps($scopeCode = null, $scopeType = null)
     {
-        return $this->getConfig(self::XML_PATH_ENABLE_ALLOWDIP_COMMINGSOON, $scopeCode, $scopeType);
+        return $this->getConfig(self::XML_PATH_ENABLE_ALLOWDIP_comingSOON, $scopeCode, $scopeType);
     }
 
     /**

@@ -41,8 +41,8 @@
                     <label>Enable Maintenance</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
-                <field id="enablecommingsoon" translate="label" type="select" sortOrder="25" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Enable Comming Soon</label>
+                <field id="enablecomingsoon" translate="label" type="select" sortOrder="25" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable coming Soon</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
                 <field id="redirect_for_maintenance" translate="label comment" type="select" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
@@ -54,14 +54,14 @@
                     <label>Allow access to these IPs</label>
                     <comment>Only allow access to thes IPs if Maintenance page is enable. Seperated by comma</comment>
                 </field>
-                <field id="redirect_for_commingsoon" translate="label comment" type="select" sortOrder="400" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Comming soon Mode Page</label>
+                <field id="redirect_for_comingsoon" translate="label comment" type="select" sortOrder="400" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>coming soon Mode Page</label>
                     <source_model>Magento\Cms\Model\Config\Source\Page</source_model>
-                    <comment>User will be redirect to this page when Comming soon mode is enable</comment>
+                    <comment>User will be redirect to this page when coming soon mode is enable</comment>
                 </field>
-                <field id="commingsoon_allowed_ip" translate="label comment" type="textarea" sortOrder="450" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Allow access to these IPs when Comming Soon Redirect</label>
-                    <comment>Only allow access to thes IPs if Comming soon is enable. Seperated by comma</comment>
+                <field id="comingsoon_allowed_ip" translate="label comment" type="textarea" sortOrder="450" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Allow access to these IPs when coming Soon Redirect</label>
+                    <comment>Only allow access to thes IPs if coming soon is enable. Seperated by comma</comment>
                 </field>
             </group>
         </section>
