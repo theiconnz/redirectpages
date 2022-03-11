@@ -1,6 +1,6 @@
 {
     "name": "theiconnz/redirectpages",
-    "description": "Page redirect Module to use in maintenance mode or in case comming soon",
+    "description": "Page redirect Module to use in maintenance mode or in case coming soon",
     "minimum-stability": "stable",
     "authors": [
         {
@@ -11,6 +11,7 @@
     "require": {
         "php": ">=7.1"
     },
+    "license": ["OSL-3.0"],
     "version": "1.0.1",
     "autoload": {
         "files": [ "registration.php" ],
