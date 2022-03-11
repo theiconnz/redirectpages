@@ -1,0 +1,21 @@
+{
+    "name": "theiconnz/redirectpages",
+    "description": "Page redirect Module to use in maintenance mode or in case comming soon",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "don udugala",
+            "email": "info@kota-factory.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "version": "1.0.1",
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "Theiconnz\\Redirectpages\\": ""
+        }
+    }
+}
